@@ -25,7 +25,8 @@
   </div>
   <div *ngIf="urlProcesada" class="row">
     <div class="col-lg-8">
-      <input type="text" [(ngModel)]="urlShort" class="form-control form-control-lg" placeholder="URL PROCESADA...">
+      <input type="text" id="url-short" [(ngModel)]="urlShort" class="form-control form-control-lg" placeholder="URL PROCESADA...">
+      <div id="url-short" class="form-text">Enlace corto de la URL: {{nombreUrl }}.</div>
     </div>
   </div>
   <app-spinner *ngIf="loading"></app-spinner>
